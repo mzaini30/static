@@ -7,8 +7,9 @@
 		<script>
 			navigator.serviceWorker.register('/sw.js')
 		</script>
+		<sergey-slot name='head'></sergey-slot>
 	</head>
 	<body>
-		<sergey-slot/>
+		<sergey-slot name='body'></sergey-slot>
 	</body>
 </html>
