@@ -23,3 +23,17 @@ Pakai Sergey
 ## Styling
 
 Pakai Windi
+
+## Developing
+
+```bash
+pnpm run dev
+```
+
+## Publish
+
+```bash
+pnpm run build
+```
+
+Hasilnya: folder `public/`
