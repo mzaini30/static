@@ -4,6 +4,9 @@
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1'>
 		<script src='/alpine.min.js' defer></script>
+		<script>
+			navigator.serviceWorker.register('/sw.js')
+		</script>
 	</head>
 	<body>
 		<sergey-slot/>
