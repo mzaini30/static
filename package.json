@@ -1,29 +1,27 @@
 {
-  "name": "static",
+  "name": "olah-eleventy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generate:sergey": "sergey-zen",
-    "generate:windi": "windicss public/**/*.html -mts -f windi.config.js",
-    "generate-workbox": "workbox generateSW workbox-config.js",
-    "dev:nodemon": "nodemon -e html --ignore public/ -x run-s generate:*",
-    "dev:liteserver": "lite-server",
-    "hapus-sw": "del-cli public/sw.js",
+    "hapus-sw": "del-cli _site/sw.js",
+    "dev:eleventy": "eleventy --serve",
+    "dev:windi": "nodemon -e njk -x windicss './**/*.html' -mts -f windi.config.js",
     "dev": "run-p hapus-sw dev:*",
-    "build:hapus": "del-cli public/",
+    "generate:eleventy": "eleventy",
+    "generate:windi": "windicss './**/*.html' -mts -f windi.config.js",
+    "generate-workbox": "workbox generateSW workbox-config.js",
+    "build:hapus": "del-cli _site/",
     "build": "run-s build:hapus generate:* generate-workbox"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "del-cli": "^3.0.1",
-    "lite-server": "^2.6.1",
     "nodemon": "^2.0.7",
     "npm-run-all": "^4.1.5",
-    "sergey-zen": "^0.0.16",
     "windicss": "^2.5.14",
     "workbox-cli": "^6.1.5"
   }

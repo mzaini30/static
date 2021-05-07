@@ -18,7 +18,7 @@ pnpm i
 
 ## Templating
 
-Pakai [Sergey](https://sergey.cool/)
+Pakai Nunjucks
 
 ## Styling
 
@@ -44,4 +44,4 @@ pnpm run dev
 pnpm run build
 ```
 
-Hasilnya: folder `public/`
+Hasilnya: folder `_site/`
