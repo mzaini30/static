@@ -18,15 +18,15 @@ pnpm i
 
 ## Templating
 
-Pakai Sergey
+Pakai [Sergey](https://sergey.cool/)
 
 ## Styling
 
-Pakai Windi
+Pakai [Windi](https://windicss.org/)
 
 ## Reactive
 
-Pakai Alpine
+Pakai [Alpine](https://github.com/alpinejs/alpine)
 
 ## Developing
 
