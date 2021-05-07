@@ -28,6 +28,10 @@ Pakai [Windi](https://windicss.org/)
 
 Pakai [Alpine](https://github.com/alpinejs/alpine)
 
+## Offline Mode
+
+Pas build
+
 ## Developing
 
 ```bash
