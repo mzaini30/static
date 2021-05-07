@@ -1,5 +1,5 @@
 {
-  "name": "coba-sergey",
+  "name": "static",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "generate:sergey": "sergey-zen",
     "generate:windi": "windicss public/**/*.html -mts -f windi.config.js",
     "generate-workbox": "workbox generateSW workbox-config.js",
-    "dev:nodemon": "nodemon -e html --ignore public -x run-s generate:*",
+    "dev:nodemon": "nodemon -e html --ignore public/ -x run-s generate:*",
     "dev:liteserver": "lite-server",
     "hapus-sw": "del-cli public/sw.js",
     "dev": "run-p hapus-sw dev:*",
