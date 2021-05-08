@@ -6,7 +6,7 @@
   "scripts": {
     "hapus-sw": "del-cli _site/sw.js",
     "dev:eleventy": "eleventy --serve",
-    "dev:windi": "nodemon -e njk -x windicss './**/*.html' -mts -f windi.config.js",
+    "dev:windi": "nodemon -e njk -x \"windicss './**/*.html' -mts -f windi.config.js\"",
     "dev": "run-p hapus-sw dev:*",
     "generate:eleventy": "eleventy",
     "generate:windi": "windicss './**/*.html' -mts -f windi.config.js",
