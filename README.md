@@ -20,6 +20,8 @@ pnpm i
 
 Pakai Nunjucks
 
+Letakkan file-file Nunjucks di `src/`. Sedangkan, file-file lainnya di `static/`
+
 ## Styling
 
 Pakai [Windi](https://windicss.org/)
