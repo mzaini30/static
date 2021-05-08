@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+	<title>Static</title>
+    <meta property='og:image' content="/cover.png">
+    <meta name="description" content="Static Site Generator">
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="/favicon.ico" />
 	<link rel="stylesheet" href="index.windi.css">
+	
+	<script src="/alpine.min.js" defer></script>
 	<script>
 		navigator.serviceWorker.register('/sw.js')
 	</script>
-	<script src="/alpine.min.js" defer></script>
+	
 	{% block head %}{% endblock %}
 </head>
 <body>
